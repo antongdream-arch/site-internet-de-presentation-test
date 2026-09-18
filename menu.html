@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Carte & Menus | Le Bistrot Gourmet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+    <div class="logo"><a href="index.html">Le Bistrot Gourmet</a></div>
+    
+    <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <nav>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html" class="active">La Carte</a></li>
+            <li><a href="contact.html">Contact & Accès</a></li>
+            <li><a href="reservation.html" class="btn-nav">Réserver une table</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="section-container" style="padding-top: 8rem;">
+        <h1 class="section-title">Notre Carte & Menus</h1>
+        <p class="section-subtitle">Élaborée avec soin à partir de produits frais et de saison</p>
+
+        <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all">Tout voir</button>
+            <button class="filter-btn" data-filter="entrees">Entrées</button>
+            <button class="filter-btn" data-filter="plats">Plats</button>
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+            <button class="filter-btn" data-filter="boissons">Boissons & Vins</button>
+            <button class="filter-btn" data-filter="formules">Formules</button>
+        </div>
+
+        <div class="menu-full-grid">
+
+            <!-- MODIFIABLE : FORMULES -->
+            <div class="menu-section-block" data-category="formules">
+                <h2 class="category-header">Formules & Menus</h2>
+                <div class="items-grid">
+                    <div class="menu-card">
+                        <div class="item-header">
+                            <span class="item-name">Formule Express du Midi</span>
+                            <span class="item-price">22 €</span>
+                        </div>
+                        <p class="item-desc">Entrée + Plat ou Plat + Dessert. Du mardi au vendredi midi.</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="item-header">
+                            <span class="item-name">Menu Dégustation (5 Services)</span>
+                            <span class="item-price">58 €</span>
+                        </div>
+                        <p class="item-desc">Voyage gastronomique composé par le Chef selon les arrivages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODIFIABLE : ENTRÉES -->
+            <div class="menu-section-block" data-category="entrees">
+                <h2 class="category-header">Entrées</h2>
+                <div class="items-grid">
+                    <div class="menu-card">
+                        <div class="item-header">
+                            <span class="item-name">Velouté de Potimarron aux Châtaignes</span>
+                            <span class="item-price">12 €</span>
+                        </div>
+                        <p class="item-desc">Émulsion de noisette torréfiée et éclats de châtaignes grillées.</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="item-header">
+                            <span class="item-name">Foie Gras de Canard Maison</span>
+                            <span class="item-price">18 €</span>
+                        </div>
+                        <p class="item-desc">Chutney de figues au vin chaud, brioche tiède toastée.</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="item-header">
+                            <span class="item-name">Tartare de Saint-Jacques & Agrumes</span>
+                            <span class="item-price">16 €</span>
+                        </div>
+                        <p class="item-desc">Mariné au citron vert, huile d'olive pimentée et perles de grenade.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODIFIABLE : PLATS -->
+            <div class="menu-section-block" data-category="plats">
+                <h2 class="category-header">Plats Principaux</h2>
+                <div class="items-grid">
+                    <div class="menu-card">
+                        <div class="item-header">
+                            <span class="item-name">Filet de Bœuf Aubrac Rôti</span>
+                            <span class="item-price">32 €</span>
+                        </div>
+                        <p class="item-desc">Jus corsé au thym, mousseline soyeuse de pommes de terre.</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="item-header">
+                            <span class="item-name">Magret de Canard du Sud-Ouest</span>
+                            <span class="item-price">28 €</span>
+                        </div>
+                        <p class="item-desc">Sauce au miel de lavande, poêlée de légumes oubliés.</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="item-header">
+                            <span class="item-name">Risotto aux Champignons des Bois</span>
+                            <span class="item-price">24 €</span>
+                        </div>
+                        <p class="item-desc">Riz Carnaroli, cèpes poêlés, tuile de Parmigiano Reggiano.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODIFIABLE : DESSERTS -->
+            <div class="menu-section-block" data-category="desserts">
+                <h2 class="category-header">Desserts</h2>
+                <div class="items-grid">
+                    <div class="menu-card">
+                        <div class="item-header">
+                            <span class="item-name">Soufflé Chaud au Chocolat Valrhona</span>
+                            <span class="item-price">13 €</span>
+                        </div>
+                        <p class="item-desc">Cœur coulant chocolat noir 70%, glace vanille de Madagascar.</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="item-header">
+                            <span class="item-name">Tarte Tatin Revisitée</span>
+                            <span class="item-price">11 €</span>
+                        </div>
+                        <p class="item-desc">Pommes caramélisées au beurre salé, crème double d'Isigny.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODIFIABLE : BOISSONS -->
+            <div class="menu-section-block" data-category="boissons">
+                <h2 class="category-header">Boissons & Vins</h2>
+                <div class="items-grid">
+                    <div class="menu-card">
+                        <div class="item-header">
+                            <span class="item-name">Chablis 1er Cru "Montmains" (Verre)</span>
+                            <span class="item-price">9 €</span>
+                        </div>
+                        <p class="item-desc">Vin blanc sec, notes minérales et d'agrumes.</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="item-header">
+                            <span class="item-name">Saint-Émilion Grand Cru (Bouteille)</span>
+                            <span class="item-price">48 €</span>
+                        </div>
+                        <p class="item-desc">Rouge puissant et élégant, arômes de fruits noirs.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer style="margin-top: 5rem;">
+        <div class="footer-grid">
+            <div>
+                <h3>Le Bistrot Gourmet</h3>
+                <p>12 Rue de la Gastronomie, 75001 Paris</p>
+                <p>Tél : 01 42 68 00 00</p>
+            </div>
+            <div>
+                <h3>Horaires</h3>
+                <p>Mardi - Samedi : 12h00 - 14h30 | 19h00 - 22h30</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

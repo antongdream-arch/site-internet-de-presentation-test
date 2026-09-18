@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver une Table | Le Bistrot Gourmet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+    <div class="logo"><a href="index.html">Le Bistrot Gourmet</a></div>
+    
+    <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <nav>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">La Carte</a></li>
+            <li><a href="contact.html">Contact & Accès</a></li>
+            <li><a href="reservation.html" class="btn-nav active">Réserver une table</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="section-container" style="padding-top: 8rem;">
+        <h1 class="section-title">Réserver une Table</h1>
+        <p class="section-subtitle">Garantissez votre moment gastronomique en quelques clics</p>
+
+        <div class="reservation-grid">
+            <div class="reservation-card">
+                <form id="reservation-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nom complet *</label>
+                            <input type="text" class="form-control" placeholder="Jean Dupont" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Téléphone *</label>
+                            <input type="tel" class="form-control" placeholder="06 12 34 56 78" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Adresse E-mail *</label>
+                        <input type="email" class="form-control" placeholder="jean.dupont@example.com" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Date *</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Heure *</label>
+                            <select class="form-control" required>
+                                <option value="">Choisir...</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Couverts *</label>
+                            <input type="number" class="form-control" min="1" max="8" value="2" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Demande particulière (Allergies, terrasse, anniversaire...)</label>
+                        <textarea class="form-control" placeholder="Précisez ici vos contraintes ou préférences..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Confirmer ma réservation</button>
+                </form>
+            </div>
+
+            <div class="info-card">
+                <!-- MODIFIABLE : Politiques de réservation du restaurant -->
+                <h3>Informations Importantes</h3>
+                <ul class="info-list">
+                    <li>✓ <strong>Groupes :</strong> Pour toute réservation supérieure à 8 personnes, merci de nous contacter par téléphone.</li>
+                    <li>✓ <strong>Retard :</strong> La table est conservée pendant 15 minutes au-delà de l'heure réservée.</li>
+                    <li>✓ <strong>Confirmation :</strong> Vous recevrez un SMS et un e-mail de confirmation dès la validation.</li>
+                </ul>
+
+                <h3 style="margin-top: 2rem;">Une question ?</h3>
+                <p style="color:var(--text-muted); font-size:0.95rem;">Contactez notre équipe directement par téléphone au :<br><strong>01 42 68 00 00</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <footer style="margin-top: 5rem;">
+        <div class="footer-grid">
+            <div>
+                <h3>Le Bistrot Gourmet</h3>
+                <p>12 Rue de la Gastronomie, 75001 Paris</p>
+                <p>Tél : 01 42 68 00 00</p>
+            </div>
+            <div>
+                <h3>Horaires</h3>
+                <p>Mardi - Samedi : 12h00 - 14h30 | 19h00 - 22h30</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

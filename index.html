@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Bistrot Gourmet | Restaurant Gastronomique Paris 1er</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <header class="navbar" id="navbar">
+    <!-- MODIFIABLE : Nom du restaurant -->
+    <div class="logo"><a href="index.html">Le Bistrot Gourmet</a></div>
+    
+    <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <nav>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="menu.html">La Carte</a></li>
+            <li><a href="contact.html">Contact & Accès</a></li>
+            <li><a href="reservation.html" class="btn-nav">Réserver une table</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <!-- MODIFIABLE : Slogan d'accueil -->
+            <span class="badge-direct">Gastronomie & Saisonnalité</span>
+            <h1>L'élégance du goût,<br>l'authenticité du terroir.</h1>
+            <p>Découvrez notre cuisine de saison préparée chaque jour avec passion et précision.</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn btn-primary">Découvrir la carte</a>
+                <a href="reservation.html" class="btn btn-secondary">Réserver une table</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Section Aperçu de la carte -->
+        <section class="section-container">
+            <h2 class="section-title">Créations Signatures</h2>
+            <p class="section-subtitle">Un aperçu de notre savoir-faire culinaire du moment</p>
+
+            <div class="menu-categories">
+                <!-- MODIFIABLE : Plats phares de l'accueil -->
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Filet de Bœuf Aubrac Rôti</span>
+                        <span class="item-price">32 €</span>
+                    </div>
+                    <p class="item-desc">Jus corsé au thym sauvage, mousseline soyeuse de pommes de terre à la fleur de sel.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Risotto aux Champignons des Bois</span>
+                        <span class="item-price">24 €</span>
+                    </div>
+                    <p class="item-desc">Riz Carnaroli onctueux, cèpes poêlés, tuile croustillante de Parmigiano Reggiano 24 mois.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Soufflé Chaud au Chocolat Valrhona</span>
+                        <span class="item-price">13 €</span>
+                    </div>
+                    <p class="item-desc">Cœur coulant chocolat noir 70%, glace artisanale à la vanille Bourbon de Madagascar.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="menu.html" class="btn btn-secondary" style="color:var(--dark); border-color:var(--border);">Consulter toute la carte & les menus</a>
+            </div>
+        </section>
+
+        <!-- Section Philosophie / Le Restaurant -->
+        <section class="section-container" style="background:#ffffff; border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+            <div class="reservation-grid">
+                <div>
+                    <!-- MODIFIABLE : Présentation du restaurant -->
+                    <h2 style="text-align:left; margin-bottom:1rem;">Une passion transmise à chaque assiette</h2>
+                    <p style="color:var(--text-muted); margin-bottom:1rem;">Installé au cœur de Paris, Le Bistrot Gourmet met à l'honneur les produits de nos régions travaillés dans le respect de la saisonnalité.</p>
+                    <p style="color:var(--text-muted);">Notre Chef sélectionne quotidiennement ses ingrédients auprès de producteurs indépendants engagés dans une démarche durable.</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600" alt="Intérieur du restaurant" style="width:100%; border-radius:var(--radius-md); box-shadow:var(--shadow-sm);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Club VIP -->
+        <section class="section-container">
+            <div class="loyalty-card">
+                <!-- MODIFIABLE : Inscription newsletter -->
+                <h2>Rejoignez le Club Gourmand</h2>
+                <p>Inscrivez-vous pour recevoir nos nouvelles cartes en avant-première et bénéficier d'invitations exclusives.</p>
+                <form id="loyalty-form" class="inline-form">
+                    <input type="email" class="form-control" placeholder="Votre adresse e-mail" required>
+                    <button type="submit" class="btn btn-primary">S'inscrire</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <!-- MODIFIABLE : Coordonnées -->
+                <h3>Le Bistrot Gourmet</h3>
+                <p>12 Rue de la Gastronomie, 75001 Paris</p>
+                <p>Tél : 01 42 68 00 00</p>
+            </div>
+            <div>
+                <!-- MODIFIABLE : Horaires -->
+                <h3>Horaires</h3>
+                <p>Mardi - Samedi : 12h00 - 14h30 | 19h00 - 22h30</p>
+                <p>Dimanche & Lundi : Fermé</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
